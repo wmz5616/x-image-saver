@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "X-Image Downloader",
+    "version": "1.0",
+    "description": "github.com/wmz5616/X-Image-Saver",
+    "permissions": [
+        "contextMenus",
+        "downloads",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.twitter.com/*",
+                "*://*.x.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "48": "X.png"
+    }
+}
