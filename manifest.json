@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "X-Image Downloader",
-    "version": "1.0",
+    "version": "1.1",
     "description": "github.com/wmz5616/X-Image-Saver",
     "permissions": [
         "contextMenus",
@@ -18,7 +18,8 @@
                 "*://*.x.com/*"
             ],
             "js": [
-                "content.js"
+                "content.js",
+                "batch.js"
             ]
         }
     ],
