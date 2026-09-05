@@ -1,14 +1,15 @@
 {
     "manifest_version": 3,
-    "name": "X-Media Downloads Pro",
-    "version": "2.0",
+    "name": "X-Media Downloads",
+    "version": "4.0",
     "description": "X Media Collector with ZIP",
     "permissions": [
         "contextMenus",
         "downloads",
         "activeTab",
         "scripting",
-        "storage"
+        "storage",
+        "notifications"
     ],
     "host_permissions": [
         "*://*.twitter.com/*",
@@ -17,6 +18,9 @@
         "*://video.twimg.com/*",
         "https://api.fxtwitter.com/*"
     ],
+    "action": {
+        "default_title": "打开 X 媒体采集面板"
+    },
     "background": {
         "service_worker": "background.js"
     },
